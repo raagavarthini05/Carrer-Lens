@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerLens</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>CAREERLENS</h1>
+        <p class="tagline">
+            AI-Powered Employability & Career Readiness Analyzer
+        </p>
+
+        <div class="card">
+
+            <h2>Student Profile</h2>
+
+            <label>Student Name</label>
+            <input type="text" id="studentName" placeholder="Enter your name">
+
+            <label>Target Job Role</label>
+            <input type="text" id="jobRole" placeholder="Example: Java Developer">
+
+            <label>Resume Available?</label>
+            <select id="resume">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label>GitHub Profile Available?</label>
+            <select id="github">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label>Portfolio Available?</label>
+            <select id="portfolio">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label>LinkedIn Profile Available?</label>
+            <select id="linkedin">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Skill Evidence</h2>
+
+            <p>Choose the evidence level for each skill.</p>
+
+            <label>Java</label>
+            <select id="java">
+                <option value="verified">Verified</option>
+                <option value="weak">Weak</option>
+                <option value="unsupported">Unsupported</option>
+            </select>
+
+            <label>Python</label>
+            <select id="python">
+                <option value="verified">Verified</option>
+                <option value="weak">Weak</option>
+                <option value="unsupported">Unsupported</option>
+            </select>
+
+            <label>SQL</label>
+            <select id="sql">
+                <option value="verified">Verified</option>
+                <option value="weak">Weak</option>
+                <option value="unsupported">Unsupported</option>
+            </select>
+
+            <button onclick="analyzeProfile()">
+                ANALYZE PROFILE
+            </button>
+
+        </div>
+
+
+        <div id="result" class="card result">
+
+            <h2>CareerLens Analysis</h2>
+
+            <div id="output">
+                Enter your details and click Analyze Profile.
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
